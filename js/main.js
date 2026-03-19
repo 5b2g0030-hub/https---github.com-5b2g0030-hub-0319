@@ -1,3 +1,3 @@
 function goProjects() {
-    window.location.href = "projects.html";
-  }
+  window.location.href = "projects.html";
+}
