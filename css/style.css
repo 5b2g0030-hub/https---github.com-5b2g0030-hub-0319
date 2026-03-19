@@ -32,10 +32,9 @@ nav a:hover { color:white; }
 .hero-img { width:150px; height:150px; border-radius:50%; object-fit:cover; margin-bottom:20px; border:3px solid #6c63ff; }
 
 .typing-text::after { content:"|"; animation: blink 1s infinite; }
-@keyframes blink { 0%,50%,100%{opacity:1;} 25%,75%{opacity:0;} }
+@keyframes blink {0%,50%,100%{opacity:1;}25%,75%{opacity:0;}}
 
 .about-section { margin:50px; padding:30px; background:rgba(255,255,255,0.05); backdrop-filter:blur(10px); border-radius:15px; text-align:center; }
-
 .about-img { width:120px; height:120px; border-radius:50%; object-fit:cover; margin-bottom:20px; border:2px solid #fff; }
 
 .skill { margin-bottom:15px; }
@@ -43,18 +42,17 @@ nav a:hover { color:white; }
 .skill-bar div { height:100%; width:0; background:#6c63ff; border-radius:10px; transition:width 1.5s ease; }
 
 .grid { display:flex; gap:20px; padding:50px; flex-wrap:wrap; }
-.card { flex:1; min-width:200px; padding:20px; background:rgba(30,30,50,0.8); border-radius:15px; transition:transform 0.4s,box-shadow 0.4s; text-align:center; backdrop-filter:blur(10px); }
-.card:hover { transform:translateY(-15px) scale(1.05); box-shadow:0 20px 40px rgba(108,99,255,0.5);}
-.card img { width:100%; border-radius:10px; margin-bottom:15px; transition:transform 0.3s;}
+.card { flex:1; min-width:200px; padding:20px; background:rgba(30,30,50,0.8); border-radius:15px; text-align:center; backdrop-filter:blur(10px); transition: transform 0.4s, box-shadow 0.4s; }
+.card:hover { transform:translateY(-15px) scale(1.05); box-shadow:0 20px 40px rgba(108,99,255,0.5); }
+.card img { width:100%; border-radius:10px; margin-bottom:15px; transition:transform 0.3s; }
 .card img:hover { transform:scale(1.05); }
-
-.fade-in { opacity:0; transform:translateY(20px); transition:all 1s ease; }
-.fade-in.show { opacity:1; transform:translateY(0); }
 
 .decor-ball { position:fixed; left:var(--x); top:var(--y); width:var(--size); height:var(--size); background:rgba(108,99,255,0.3); border-radius:50%; filter:blur(40px); pointer-events:none; animation:floatBall 15s infinite alternate; }
 @keyframes floatBall {0%{transform:translate(0,0);}100%{transform:translate(20px,-20px);}}
 
 .parallax { transition:transform 0.3s ease; }
 .parallax:hover { transform:translateY(-10px) scale(1.03); }
+
+.show { opacity:1; transform:translateY(0); }
 
 @media (max-width:768px){.grid{flex-direction:column;}.hero h1{font-size:36px;}}
