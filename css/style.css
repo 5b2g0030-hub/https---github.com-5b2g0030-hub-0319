@@ -1,0 +1,64 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #0f0f1a;
+    color: white;
+  }
+  
+  /* Navbar */
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    color: #aaa;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: white;
+  }
+  
+  /* Hero */
+  .hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+  }
+  
+  .hero span {
+    background: linear-gradient(90deg, #6c63ff, #9f7aea);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* 卡片 */
+  .grid {
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+  }
+  
+  .card {
+    flex: 1;
+    padding: 30px;
+    background: #1a1a2e;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* 毛玻璃 */
+  .glass {
+    margin: 50px;
+    padding: 30px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+  }
